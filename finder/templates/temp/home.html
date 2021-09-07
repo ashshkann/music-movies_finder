@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div style="background: url(https://i.postimg.cc/3N7wnb75/background.jpg)" class="jumbotron bg-cover text-white">
+    <div class="container py-5 text-center">
+        <h1 class="display-4 font-weight-bold">Find Similar Movies & Music</h1>
+        <p class="font-italic mb-0">You can easily find your similar movies and music with us</p>
+        <p class="font-italic">
+            <a href="#" class="text-white">
+                <u></u>
+            </a>
+        </p>
+        <a href="{% url 'musicpage' %}" role="button" class="btn btn-primary px-5">Find Similar Music</a>
+        <a href="{% url 'moviespage' %}" role="button" class="btn btn-primary px-5">Find Similar Movies</a>
+    </div>
+</div>
+
+<!-- For Demo Purpose -->
+<div class="container py-5">
+    <h2 class="h3 font-weight-bold">Work from ashshkan company</h2>
+    <div class="row">
+        <div class="col-lg-10 mb-4">
+            <p class="font-italic text-muted">This company is made for the comfort of the people of the world and provides services for the comfort of the people</p>
+            <p class="font-italic text-muted"></p>
+        </div>
+        <div class="col-lg-8">
+            <p class="font-italic text-muted"><strong class="font-weight-bold text-dark">adipisicing elit, sed </strong>do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <strong class="font-weight-bold text-dark">reprehenderit in voluptate </strong>velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

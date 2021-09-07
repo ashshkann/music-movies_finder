@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Similar Movies{% endblock %}
+{% block content %}
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">about</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item1, item2 in data %}
+    <tr>
+      <th scope="row">{{ item1 }}</th>
+      <td>{{ item2 }}</td>
+      <td><a href="https://www.youtube.com/results?search_query={{ item2 }}" target="_blank">more information</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+    {% for error in form.finder_movies_form.errors %}
+        <p style="color: red;">{{ error }}</p>
+    {% endfor %}
+</table>   
+
+{% endblock %}
